@@ -6,6 +6,7 @@ from sidebar_ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
+    print("Hi! Github")
     def __init__(self):
         super(MainWindow, self).__init__()
 
