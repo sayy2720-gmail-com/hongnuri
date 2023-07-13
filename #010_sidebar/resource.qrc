@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="icon">
+    <file>icon/caret-back.ico</file>
+    <file>icon/caret-forward.ico</file>
+    <file>caret-forward.svg</file>
+    <file>caret-back.svg</file>
     <file>icon/account-logout-64.ico</file>
     <file>icon/activity-feed-32.ico</file>
     <file>icon/activity-feed-48.ico</file>

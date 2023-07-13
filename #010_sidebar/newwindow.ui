@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewWindow1</class>
+ <widget class="QMainWindow" name="NewWindow1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>546</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>531</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>8</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="chapter1f">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter1c">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter1d">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter1a">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter1e">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter1b">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="chapter2f">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter2c">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter2d">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter2a">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter2e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter2b">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter2</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="chapter3f">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter3c">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter3d">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter3b">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter3a">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter3e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QPushButton" name="chapter4f">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>720</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter4c">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>330</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter4d">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>460</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter4b">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>200</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter4a">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter4e">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>590</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter4</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QPushButton" name="chapter5f">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter5c">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter5d">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter5b">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter5a">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter5e">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QPushButton" name="chapter6f">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter6c">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter6d">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter6b">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter6a">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter6e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter6</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QPushButton" name="chapter7e">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter7b">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter7c">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter7a">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label7">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter7d">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter7f">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter7</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QPushButton" name="chapter8e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter8b">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter8d">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter8c">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter8a">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter8f">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter8</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QPushButton" name="chapter9f">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>710</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label9">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter9c">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter9d">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter9b">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter9a">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chapter9e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>580</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chapter9</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

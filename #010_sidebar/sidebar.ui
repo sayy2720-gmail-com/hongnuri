@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>950</width>
+    <width>962</width>
     <height>600</height>
    </rect>
   </property>
@@ -14,22 +14,128 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/*= Style for mainwindow START
+  ==================================================== */
+	#MainWindow {
+		background-color: #fff;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for button to change menu style START
+  ==================================================== */
+	#change_btn {
+		padding: 5px;
+		border: none;
+		width: 30px;
+		height: 30px;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for header widget START
+  ==================================================== */
+	#widget {
+		background-color: #f9fafd;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for menu with icon only START
+  ==================================================== */
+  	/* style for widget */
+	#icon_only_widget {
+		background-color: #313a46;
+		width:50px;
+	}
+
+    /* style for QPushButton and QLabel */
+	#icon_only_widget QPushButton, QLabel {
+		height:50px;
+		border:none;
+		/* border-bottom: 1px solid #b0b0b0; */
+	}
+
+	#icon_only_widget QPushButton:hover {
+		background-color: rgba( 86, 101, 115, 0.5);
+	}
+
+	/* style for logo image */
+	#logo_label_1 {
+		padding: 5px
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for menu with icon and text START
+  ==================================================== */
+	/* style for widget */
+	#full_menu_widget {
+		background-color: #313a46;
+	}
+
+	/* style for QPushButton */
+	#full_menu_widget QPushButton {
+		border:none;
+		border-radius: 3px;
+		text-align: left;
+		padding: 8px 0 8px 15px;
+		color: #788596;
+	}
+
+	#full_menu_widget QPushButton:hover {
+		background-color: rgba( 86, 101, 115, 0.5);
+	}
+
+	#full_menu_widget QPushButton:checked {
+		color: #fff;
+	}
+
+	/* style for logo image */
+	#logo_label_2 {
+		padding: 5px;
+		color: #fff;
+	}
+
+	/* style for APP title */
+	#logo_label_3 {
+		padding-right: 10px;
+		color: #fff;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for search button START
+  ==================================================== */
+	#search_btn {
+		border: none;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for search input START
+  ==================================================== */
+	#search_input {
+		border: none;
+		padding: 5px 10px;
+	}
+
+	#search_input:focus {
+		background-color: #70B9FE;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for user information button START
+  ==================================================== */
+	#user_btn {
+		border: none;
+	}
+/*= END
+  ==================================================== */</string>
+   </property>
    <layout class="QGridLayout" name="gridLayout">
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <property name="spacing">
-     <number>0</number>
-    </property>
     <item row="0" column="0">
      <widget class="QWidget" name="icon_only_widget" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -68,7 +174,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resource.qrc">:/icon/icon/Logo.png</pixmap>
+            <pixmap resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">:/icon/icon/Logo.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -88,7 +194,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/home-4-32.ico</normaloff>
              <normalon>:/icon/icon/home-4-48.ico</normalon>:/icon/icon/home-4-32.ico</iconset>
            </property>
@@ -112,7 +218,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/dashboard-5-32.ico</normaloff>
              <normalon>:/icon/icon/dashboard-5-48.ico</normalon>:/icon/icon/dashboard-5-32.ico</iconset>
            </property>
@@ -136,7 +242,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/activity-feed-32.ico</normaloff>
              <normalon>:/icon/icon/activity-feed-48.ico</normalon>:/icon/icon/activity-feed-32.ico</iconset>
            </property>
@@ -160,7 +266,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/product-32.ico</normaloff>
              <normalon>:/icon/icon/product-48.ico</normalon>:/icon/icon/product-32.ico</iconset>
            </property>
@@ -184,7 +290,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/group-32.ico</normaloff>
              <normalon>:/icon/icon/group-48.ico</normalon>:/icon/icon/group-32.ico</iconset>
            </property>
@@ -223,7 +329,7 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="resource.qrc">
+          <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
            <normaloff>:/icon/icon/close-window-64.ico</normaloff>:/icon/icon/close-window-64.ico</iconset>
          </property>
          <property name="iconSize">
@@ -263,7 +369,7 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resource.qrc">:/icon/icon/Logo.png</pixmap>
+            <pixmap resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">:/icon/icon/Logo.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -295,7 +401,7 @@
             <string>Home</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/home-4-32.ico</normaloff>
              <normalon>:/icon/icon/home-4-48.ico</normalon>:/icon/icon/home-4-32.ico</iconset>
            </property>
@@ -319,7 +425,7 @@
             <string>Dashboard</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/dashboard-5-32.ico</normaloff>
              <normalon>:/icon/icon/dashboard-5-48.ico</normalon>:/icon/icon/dashboard-5-32.ico</iconset>
            </property>
@@ -343,7 +449,7 @@
             <string>Orders</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/activity-feed-32.ico</normaloff>
              <normalon>:/icon/icon/activity-feed-48.ico</normalon>:/icon/icon/activity-feed-32.ico</iconset>
            </property>
@@ -367,7 +473,7 @@
             <string>Products</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/product-32.ico</normaloff>
              <normalon>:/icon/icon/product-48.ico</normalon>:/icon/icon/product-32.ico</iconset>
            </property>
@@ -391,7 +497,7 @@
             <string>Customers</string>
            </property>
            <property name="icon">
-            <iconset resource="resource.qrc">
+            <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
              <normaloff>:/icon/icon/group-32.ico</normaloff>
              <normalon>:/icon/icon/group-48.ico</normalon>:/icon/icon/group-32.ico</iconset>
            </property>
@@ -430,7 +536,7 @@
           <string>Exit</string>
          </property>
          <property name="icon">
-          <iconset resource="resource.qrc">
+          <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
            <normaloff>:/icon/icon/close-window-64.ico</normaloff>:/icon/icon/close-window-64.ico</iconset>
          </property>
          <property name="iconSize">
@@ -492,7 +598,7 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="resource.qrc">
+             <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
               <normaloff>:/icon/icon/menu-4-32.ico</normaloff>:/icon/icon/menu-4-32.ico</iconset>
             </property>
             <property name="iconSize">
@@ -537,7 +643,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="resource.qrc">
+               <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
                 <normaloff>:/icon/icon/search-13-48.ico</normaloff>:/icon/icon/search-13-48.ico</iconset>
               </property>
              </widget>
@@ -563,7 +669,7 @@
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="resource.qrc">
+             <iconset resource="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc">
               <normaloff>:/icon/icon/user-48.ico</normaloff>:/icon/icon/user-48.ico</iconset>
             </property>
            </widget>
@@ -574,26 +680,129 @@
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>5</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="page">
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_4">
-             <property name="font">
-              <font>
-               <pointsize>20</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Home Page</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
+          <widget class="QPushButton" name="chapter3">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>20</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 3</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter4">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>190</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 4</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter2">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>20</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter8">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>370</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 8</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter1">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>CHAPTER 1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter9">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>370</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 9</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter5">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>190</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 5</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter6">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>190</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 6</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>370</y>
+             <width>201</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CHAPTER 7</string>
+           </property>
+          </widget>
          </widget>
          <widget class="QWidget" name="page_2">
           <layout class="QGridLayout" name="gridLayout_3">
@@ -672,23 +881,27 @@
           </layout>
          </widget>
          <widget class="QWidget" name="page_6">
-          <layout class="QGridLayout" name="gridLayout_7">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_9">
-             <property name="font">
-              <font>
-               <pointsize>20</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Search Page</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>689</width>
+             <height>516</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>검색결과가 존재하지 않습니다</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </widget>
          <widget class="QWidget" name="page_7">
           <layout class="QGridLayout" name="gridLayout_8">
@@ -718,8 +931,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
-  <include location="../../.designer/backup/resource.qrc"/>
+  <include location="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -729,7 +941,7 @@
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>197</x>
+     <x>251</x>
      <y>23</y>
     </hint>
     <hint type="destinationlabel">
@@ -745,7 +957,7 @@
    <slot>setHidden(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>188</x>
+     <x>251</x>
      <y>25</y>
     </hint>
     <hint type="destinationlabel">
@@ -765,8 +977,8 @@
      <y>69</y>
     </hint>
     <hint type="destinationlabel">
-     <x>72</x>
-     <y>76</y>
+     <x>154</x>
+     <y>99</y>
     </hint>
    </hints>
   </connection>
@@ -778,11 +990,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>33</x>
-     <y>100</y>
+     <y>121</y>
     </hint>
     <hint type="destinationlabel">
-     <x>67</x>
-     <y>99</y>
+     <x>149</x>
+     <y>127</y>
     </hint>
    </hints>
   </connection>
@@ -794,11 +1006,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>33</x>
-     <y>123</y>
+     <y>165</y>
     </hint>
     <hint type="destinationlabel">
-     <x>69</x>
-     <y>125</y>
+     <x>151</x>
+     <y>155</y>
     </hint>
    </hints>
   </connection>
@@ -809,12 +1021,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>24</x>
-     <y>148</y>
+     <x>36</x>
+     <y>242</y>
     </hint>
     <hint type="destinationlabel">
-     <x>72</x>
-     <y>148</y>
+     <x>154</x>
+     <y>183</y>
     </hint>
    </hints>
   </connection>
@@ -825,12 +1037,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>33</x>
-     <y>177</y>
+     <x>45</x>
+     <y>292</y>
     </hint>
     <hint type="destinationlabel">
-     <x>67</x>
-     <y>172</y>
+     <x>131</x>
+     <y>200</y>
     </hint>
    </hints>
   </connection>
@@ -841,12 +1053,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>70</x>
-     <y>63</y>
+     <x>152</x>
+     <y>99</y>
     </hint>
     <hint type="destinationlabel">
-     <x>41</x>
-     <y>60</y>
+     <x>53</x>
+     <y>92</y>
     </hint>
    </hints>
   </connection>
@@ -857,12 +1069,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>160</x>
-     <y>99</y>
+     <x>207</x>
+     <y>127</y>
     </hint>
     <hint type="destinationlabel">
-     <x>26</x>
-     <y>90</y>
+     <x>38</x>
+     <y>121</y>
     </hint>
    </hints>
   </connection>
@@ -873,12 +1085,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>143</x>
-     <y>112</y>
+     <x>189</x>
+     <y>144</y>
     </hint>
     <hint type="destinationlabel">
-     <x>39</x>
-     <y>114</y>
+     <x>51</x>
+     <y>192</y>
     </hint>
    </hints>
   </connection>
@@ -889,12 +1101,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>162</x>
-     <y>142</y>
+     <x>189</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>43</x>
-     <y>144</y>
+     <x>55</x>
+     <y>242</y>
     </hint>
    </hints>
   </connection>
@@ -905,12 +1117,12 @@
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>162</x>
-     <y>163</y>
+     <x>189</x>
+     <y>200</y>
     </hint>
     <hint type="destinationlabel">
      <x>39</x>
-     <y>184</y>
+     <y>268</y>
     </hint>
    </hints>
   </connection>
@@ -921,12 +1133,12 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>126</x>
-     <y>584</y>
+     <x>207</x>
+     <y>577</y>
     </hint>
     <hint type="destinationlabel">
      <x>284</x>
-     <y>606</y>
+     <y>599</y>
     </hint>
    </hints>
   </connection>
@@ -937,14 +1149,19 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>34</x>
-     <y>592</y>
+     <x>45</x>
+     <y>588</y>
     </hint>
     <hint type="destinationlabel">
      <x>47</x>
-     <y>626</y>
+     <y>599</y>
     </hint>
    </hints>
   </connection>
  </connections>
+ <slots>
+  <slot>slot1()</slot>
+  <slot>slot2()</slot>
+  <slot>slot3()</slot>
+ </slots>
 </ui>
