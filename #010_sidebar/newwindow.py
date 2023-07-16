@@ -1,8 +1,10 @@
-
+## 두번째 창 UI
 from PyQt5 import QtCore, QtGui, QtWidgets
+## 다음윈도우 불러오기
 from newwindow1 import Ui_newwindow11
 
 class Ui_NewWindow1(object):
+    ## 새창열기 함수 버튼뒤에 clicked = lambda:self.openwindow()
     def openwindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_newwindow11()
@@ -18,6 +20,7 @@ class Ui_NewWindow1(object):
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
+        # 챕터 1 
         self.chapter1f = QtWidgets.QPushButton(self.page, clicked = lambda:self.openwindow())
         self.chapter1f.setGeometry(QtCore.QRect(70, 710, 411, 111))
         self.chapter1f.setObjectName("chapter1f")
@@ -43,6 +46,7 @@ class Ui_NewWindow1(object):
         self.chapter1b.setGeometry(QtCore.QRect(70, 190, 411, 111))
         self.chapter1b.setObjectName("chapter1b")
         self.stackedWidget.addWidget(self.page)
+        ## 챕터 2
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.chapter2f = QtWidgets.QPushButton(self.page_2, clicked = lambda:self.openwindow())
@@ -70,6 +74,7 @@ class Ui_NewWindow1(object):
         self.chapter2b.setGeometry(QtCore.QRect(60, 190, 411, 111))
         self.chapter2b.setObjectName("chapter2b")
         self.stackedWidget.addWidget(self.page_2)
+        ## 챕터 3
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
         self.chapter3f = QtWidgets.QPushButton(self.page_3, clicked = lambda:self.openwindow())
@@ -97,6 +102,7 @@ class Ui_NewWindow1(object):
         self.chapter3e.setGeometry(QtCore.QRect(60, 580, 411, 111))
         self.chapter3e.setObjectName("chapter3e")
         self.stackedWidget.addWidget(self.page_3)
+        # 챕터 4
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setObjectName("page_4")
         self.chapter4f = QtWidgets.QPushButton(self.page_4, clicked = lambda:self.openwindow())
@@ -124,6 +130,7 @@ class Ui_NewWindow1(object):
         self.chapter4e.setGeometry(QtCore.QRect(70, 590, 411, 111))
         self.chapter4e.setObjectName("chapter4e")
         self.stackedWidget.addWidget(self.page_4)
+        # 챕터 5
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
         self.chapter5f = QtWidgets.QPushButton(self.page_5, clicked = lambda:self.openwindow())
@@ -151,6 +158,7 @@ class Ui_NewWindow1(object):
         self.chapter5e.setGeometry(QtCore.QRect(70, 580, 411, 111))
         self.chapter5e.setObjectName("chapter5e")
         self.stackedWidget.addWidget(self.page_5)
+        # 챕터 6
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
         self.chapter6f = QtWidgets.QPushButton(self.page_6, clicked = lambda:self.openwindow())
@@ -178,6 +186,7 @@ class Ui_NewWindow1(object):
         self.chapter6e.setGeometry(QtCore.QRect(60, 580, 411, 111))
         self.chapter6e.setObjectName("chapter6e")
         self.stackedWidget.addWidget(self.page_6)
+        # 챕터 7
         self.page_7 = QtWidgets.QWidget()
         self.page_7.setObjectName("page_7")
         self.chapter7e = QtWidgets.QPushButton(self.page_7, clicked = lambda:self.openwindow())
@@ -205,6 +214,7 @@ class Ui_NewWindow1(object):
         self.chapter7f.setGeometry(QtCore.QRect(70, 710, 411, 111))
         self.chapter7f.setObjectName("chapter7f")
         self.stackedWidget.addWidget(self.page_7)
+        # 챕터 8
         self.page_8 = QtWidgets.QWidget()
         self.page_8.setObjectName("page_8")
         self.chapter8e = QtWidgets.QPushButton(self.page_8, clicked = lambda:self.openwindow())
@@ -232,6 +242,7 @@ class Ui_NewWindow1(object):
         self.chapter8f.setGeometry(QtCore.QRect(60, 710, 411, 111))
         self.chapter8f.setObjectName("chapter8f")
         self.stackedWidget.addWidget(self.page_8)
+        # 챕터 9
         self.page_9 = QtWidgets.QWidget()
         self.page_9.setObjectName("page_9")
         self.chapter9f = QtWidgets.QPushButton(self.page_9, clicked = lambda:self.openwindow())

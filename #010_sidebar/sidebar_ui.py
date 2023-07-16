@@ -1,14 +1,17 @@
-
+## 첫 시작 UI
 from PyQt5 import QtCore, QtGui, QtWidgets
+##다음 윈도우 불러오기
 from newwindow import Ui_NewWindow1
 
 
 class Ui_MainWindow(object):
+    ## 새 창 열기 함수
     def openwindow(self, index):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_NewWindow1()
         self.ui.setupUi(self.window)
         self.window.show()
+        ## 페이지 번호지정
         self.ui.stackedWidget.setCurrentIndex(index)
 
     def setupUi(self, MainWindow):
@@ -226,7 +229,8 @@ class Ui_MainWindow(object):
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
-        self.chapter3 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(2))
+        ## 페이지 번호 지정 clicked=lambda: self.openwindow(?) 
+        self.chapter3 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(2)) 
         self.chapter3.setGeometry(QtCore.QRect(490, 20, 201, 151))
         self.chapter3.setObjectName("chapter3")
         self.chapter4 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(3))

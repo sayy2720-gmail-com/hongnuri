@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    ## loading style file
+    ## STYLE파일 불러오기 
     style_file = QFile("style.qss")
     style_file.open(QFile.ReadOnly | QFile.Text)
     style_stream = QTextStream(style_file)
