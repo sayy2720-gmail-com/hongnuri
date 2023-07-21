@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
+    <width>960</width>
     <height>600</height>
    </rect>
   </property>
@@ -692,6 +692,14 @@
              <height>151</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
            <property name="text">
             <string>CHAPTER 3</string>
            </property>
@@ -704,6 +712,14 @@
              <width>201</width>
              <height>151</height>
             </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
            </property>
            <property name="text">
             <string>CHAPTER 4</string>
@@ -718,6 +734,14 @@
              <height>151</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
            <property name="text">
             <string>CHAPTER 2</string>
            </property>
@@ -730,6 +754,14 @@
              <width>201</width>
              <height>151</height>
             </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
            </property>
            <property name="text">
             <string>CHAPTER 8</string>
@@ -745,7 +777,12 @@
             </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
            </property>
            <property name="text">
             <string>CHAPTER 1</string>
@@ -760,6 +797,14 @@
              <height>151</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
            <property name="text">
             <string>CHAPTER 9</string>
            </property>
@@ -772,6 +817,14 @@
              <width>201</width>
              <height>151</height>
             </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
            </property>
            <property name="text">
             <string>CHAPTER 5</string>
@@ -786,6 +839,14 @@
              <height>151</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
            <property name="text">
             <string>CHAPTER 6</string>
            </property>
@@ -799,8 +860,169 @@
              <height>151</height>
             </rect>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
            <property name="text">
             <string>CHAPTER 7</string>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>130</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar2">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>130</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar3">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>130</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>300</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar5">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>300</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar6">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>300</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar9">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>480</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar8">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>480</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
+           </property>
+          </widget>
+          <widget class="QProgressBar" name="progressBar7">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>480</y>
+             <width>118</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Microsoft YaHei UI&quot;;</string>
+           </property>
+           <property name="value">
+            <number>24</number>
            </property>
           </widget>
          </widget>

@@ -7,58 +7,48 @@
     <x>0</x>
     <y>0</y>
     <width>546</width>
-    <height>840</height>
+    <height>811</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>10</y>
       <width>531</width>
-      <height>831</height>
+      <height>811</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>8</number>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}background-color: rgb(255, 255, 255);</string>
     </property>
-    <widget class="QWidget" name="page">
-     <widget class="QPushButton" name="chapter1f">
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_1">
+     <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter1c">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label1">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
+        <x>190</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -68,95 +58,135 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter1</string>
+       <string>CHAPTER 1</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter1d">
+     <widget class="QSplitter" name="splitter_38">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
+        <x>20</x>
+        <y>70</y>
+        <width>491</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>PushButton</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter1a">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter1e">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter1b">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
+      <widget class="QPushButton" name="chapter1_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>키워드 (Keyword)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>식별자 (Identifier)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>들여쓰기 (Indentation)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>주석 (Comment)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>변수 선언과 할당</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_6">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 103, 52);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>변수 이름 정하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter1_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QPushButton" name="chapter2f">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter2</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter2c">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter2</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label2">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>20</y>
-        <width>141</width>
+        <x>170</x>
+        <y>30</y>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -166,82 +196,135 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter2</string>
+       <string>CHAPTER 2</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter2d">
+     <widget class="QSplitter" name="splitter_2">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
+        <x>10</x>
+        <y>70</y>
+        <width>501</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter2</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter2a">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter2</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter2e">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter2</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter2b">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter2</string>
-      </property>
+      <widget class="QPushButton" name="chapter2_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>연산자 </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>리스트 기초</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>리스트 정렬</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>리스트 슬라이싱</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>리스트 컴프리헨션</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_6">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+	background-color: rgb(255, 173, 90);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>리스트 메서드</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter2_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
-     <widget class="QPushButton" name="chapter3f">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label3">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>180</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -251,95 +334,105 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter3</string>
+       <string>CHAPTER 3</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter3c">
+     <widget class="QSplitter" name="splitter">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
+        <x>30</x>
+        <y>70</y>
+        <width>481</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>PushButton</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter3d">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter3b">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter3a">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter3e">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
+      <widget class="QPushButton" name="chapter3_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(56, 56, 56);
+	background-color: rgb(255, 234, 5);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>튜플 </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter3_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(56, 56, 56);
+	background-color: rgb(255, 234, 5);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>문자열</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter3_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(56, 56, 56);
+	background-color: rgb(255, 234, 5);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>문자열 메서드</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter3_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(56, 56, 56);
+	background-color: rgb(255, 234, 5);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>문자열 메서드 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter3_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_4">
-     <widget class="QPushButton" name="chapter4f">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>720</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter4</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label4">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>30</y>
-        <width>141</width>
+        <x>180</x>
+        <y>20</y>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -349,95 +442,120 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter4</string>
+       <string>CHAPTER 4</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter4c">
+     <widget class="QSplitter" name="splitter_3">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>330</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter4</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter4d">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>460</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter4</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter4b">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>200</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter4</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter4a">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
+        <x>20</x>
         <y>70</y>
-        <width>411</width>
-        <height>111</height>
+        <width>501</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter4</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter4e">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>590</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter4</string>
-      </property>
+      <widget class="QPushButton" name="chapter4_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgb(135, 255, 7);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>집합 </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter4_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgb(135, 255, 7);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>집합 값 삭제하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter4_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgb(135, 255, 7);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>딕셔너리</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter4_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgb(135, 255, 7);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>딕셔너리 아이템 추가 및 삭제하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter4_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: rgb(135, 255, 7);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>딕셔너리 루프와 메서드</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter4_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_5">
-     <widget class="QPushButton" name="chapter5f">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter5</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label5">
       <property name="geometry">
        <rect>
-        <x>220</x>
+        <x>170</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -447,95 +565,120 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter5</string>
+       <string>CHAPTER 5</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter5c">
+     <widget class="QSplitter" name="splitter_4">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
+        <x>10</x>
+        <y>70</y>
+        <width>511</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter5</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter5d">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter5</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter5b">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter5</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter5a">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter5</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter5e">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter5</string>
-      </property>
+      <widget class="QPushButton" name="chapter5_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(6, 6, 6);
+	background-color: rgb(0, 255, 191);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>if 문</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter5_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(6, 6, 6);
+	background-color: rgb(0, 255, 191);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>for 문/while문</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter5_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(6, 6, 6);
+	background-color: rgb(0, 255, 191);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>break 문 / continue 문/pass 문</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter5_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(6, 6, 6);
+	background-color: rgb(0, 255, 191);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>함수 / 매개변수</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter5_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(6, 6, 6);
+	background-color: rgb(0, 255, 191);
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>키워드인자</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter5_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_6">
-     <widget class="QPushButton" name="chapter6f">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter6</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label6">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>180</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -545,134 +688,125 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter6</string>
+       <string>CHAPTER 6</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter6c">
+     <widget class="QSplitter" name="splitter_5">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
+        <x>10</x>
+        <y>70</y>
+        <width>511</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter6</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter6d">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter6</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter6b">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter6</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter6a">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter6</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter6e">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter6</string>
-      </property>
+      <widget class="QPushButton" name="chapter6_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(8, 201, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>클래스 기초</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter6_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(8, 201, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>클래스 속성 다루기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter6_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(8, 201, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>클래스 상속</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter6_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(8, 201, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>파이썬 내장함수 1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter6_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(8, 201, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>파이썬 내장함수 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter6_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_7">
-     <widget class="QPushButton" name="chapter7e">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter7</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter7b">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter7</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter7c">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter7</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter7a">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter7</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label7">
       <property name="geometry">
        <rect>
-        <x>220</x>
+        <x>180</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -682,56 +816,125 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter7</string>
+       <string>CHAPTER 7</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter7d">
+     <widget class="QSplitter" name="splitter_6">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
+        <x>10</x>
+        <y>70</y>
+        <width>511</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter7</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter7f">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter7</string>
-      </property>
+      <widget class="QPushButton" name="chapter7_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 0, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python 키워드 (Keyword)1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter7_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 0, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python 키워드 (Keyword) 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter7_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 0, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python 키워드 (Keyword) 3</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter7_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 0, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python 파일 다루기 </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter7_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 0, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python 파일 다루기 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter7_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_8">
-     <widget class="QPushButton" name="chapter8e">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter8</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label8">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>180</x>
         <y>20</y>
-        <width>141</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -741,95 +944,125 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter8</string>
+       <string>CHAPTER 8</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter8b">
+     <widget class="QSplitter" name="splitter_8">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter8</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter8d">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter8</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter8c">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter8</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter8a">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
+        <x>10</x>
         <y>60</y>
-        <width>411</width>
-        <height>111</height>
+        <width>511</width>
+        <height>731</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter8</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter8f">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter8</string>
-      </property>
+      <widget class="QPushButton" name="chapter8_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(238, 199, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python datetime 모듈</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter8_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(238, 199, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python time 모듈</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter8_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(238, 199, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python collections.deque</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter8_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(238, 199, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python collections.deque 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter8_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(238, 199, 255);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Python collections.namedtuple</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter8_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_9">
-     <widget class="QPushButton" name="chapter9f">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>710</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter9</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label9">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>20</y>
-        <width>141</width>
+        <x>180</x>
+        <y>10</y>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -839,73 +1072,116 @@
        </font>
       </property>
       <property name="text">
-       <string>chapter9</string>
+       <string>CHAPTER 9</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="chapter9c">
+     <widget class="QSplitter" name="splitter_7">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>320</y>
-        <width>411</width>
-        <height>111</height>
+        <x>10</x>
+        <y>52</y>
+        <width>511</width>
+        <height>741</height>
        </rect>
       </property>
-      <property name="text">
-       <string>chapter9</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
-     <widget class="QPushButton" name="chapter9d">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>450</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter9</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter9b">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>190</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter9</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter9a">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter9</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="chapter9e">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>580</y>
-        <width>411</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>chapter9</string>
-      </property>
+      <widget class="QPushButton" name="chapter9_1">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 184, 188);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>예제1. 파이썬 두 리스트 비교하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter9_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 184, 188);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>예제2.파이썬 두 문자열 비교하기 (difflib)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter9_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 184, 188);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>예제3. 파이썬 조건문 간단하게 표현하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter9_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 184, 188);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>예제4. 파이썬 zip() 사용하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter9_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 184, 188);
+
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>예제5.파이썬 변수 바꾸기 (swap)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chapter9_test">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 75 10pt &quot;Microsoft YaHei UI&quot;;
+font-weight: bold;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+border-style: solid;
+border-radius:21px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TEST</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
