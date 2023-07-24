@@ -1,11 +1,11 @@
-## 첫 시작 UI
+
 from PyQt5 import QtCore, QtGui, QtWidgets
-##다음 윈도우 불러오기
+##
 from newwindow import Ui_NewWindow1
 
 
 class Ui_MainWindow(object):
-    ## 새 창 열기 함수
+    ##새창열기함수
     def openwindow(self, index):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_NewWindow1()
@@ -16,8 +16,127 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(949, 600)
+        MainWindow.resize(960, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("/*= Style for mainwindow START\n"
+"  ==================================================== */\n"
+"    #MainWindow {\n"
+"        background-color: #fff;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for button to change menu style START\n"
+"  ==================================================== */\n"
+"    #change_btn {\n"
+"        padding: 5px;\n"
+"        border: none;\n"
+"        width: 30px;\n"
+"        height: 30px;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for header widget START\n"
+"  ==================================================== */\n"
+"    #widget {\n"
+"        background-color: #f9fafd;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for menu with icon only START\n"
+"  ==================================================== */\n"
+"      /* style for widget */\n"
+"    #icon_only_widget {\n"
+"        background-color: #313a46;\n"
+"        width:50px;\n"
+"    }\n"
+"\n"
+"    /* style for QPushButton and QLabel */\n"
+"    #icon_only_widget QPushButton, QLabel {\n"
+"        height:50px;\n"
+"        border:none;\n"
+"        /* border-bottom: 1px solid #b0b0b0; */\n"
+"    }\n"
+"\n"
+"    #icon_only_widget QPushButton:hover {\n"
+"        background-color: rgba( 86, 101, 115, 0.5);\n"
+"    }\n"
+"\n"
+"    /* style for logo image */\n"
+"    #logo_label_1 {\n"
+"        padding: 5px\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for menu with icon and text START\n"
+"  ==================================================== */\n"
+"    /* style for widget */\n"
+"    #full_menu_widget {\n"
+"        background-color: #313a46;\n"
+"    }\n"
+"\n"
+"    /* style for QPushButton */\n"
+"    #full_menu_widget QPushButton {\n"
+"        border:none;\n"
+"        border-radius: 3px;\n"
+"        text-align: left;\n"
+"        padding: 8px 0 8px 15px;\n"
+"        color: #788596;\n"
+"    }\n"
+"\n"
+"    #full_menu_widget QPushButton:hover {\n"
+"        background-color: rgba( 86, 101, 115, 0.5);\n"
+"    }\n"
+"\n"
+"    #full_menu_widget QPushButton:checked {\n"
+"        color: #fff;\n"
+"    }\n"
+"\n"
+"    /* style for logo image */\n"
+"    #logo_label_2 {\n"
+"        padding: 5px;\n"
+"        color: #fff;\n"
+"    }\n"
+"\n"
+"    /* style for APP title */\n"
+"    #logo_label_3 {\n"
+"        padding-right: 10px;\n"
+"        color: #fff;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for search button START\n"
+"  ==================================================== */\n"
+"    #search_btn {\n"
+"        border: none;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for search input START\n"
+"  ==================================================== */\n"
+"    #search_input {\n"
+"        border: none;\n"
+"        padding: 5px 10px;\n"
+"    }\n"
+"\n"
+"    #search_input:focus {\n"
+"        background-color: #70B9FE;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */\n"
+"\n"
+"/*= Style for user information button START\n"
+"  ==================================================== */\n"
+"    #user_btn {\n"
+"        border: none;\n"
+"    }\n"
+"/*= END\n"
+"  ==================================================== */")
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
@@ -229,34 +348,141 @@ class Ui_MainWindow(object):
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
-        ## 페이지 번호 지정 clicked=lambda: self.openwindow(?) 
-        self.chapter3 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(2)) 
+        self.chapter3 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(2))
         self.chapter3.setGeometry(QtCore.QRect(490, 20, 201, 151))
+        self.chapter3.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter3.setObjectName("chapter3")
-        self.chapter4 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(3))
+        self.chapter4 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(3))
         self.chapter4.setGeometry(QtCore.QRect(30, 190, 201, 151))
+        self.chapter4.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter4.setObjectName("chapter4")
-        self.chapter2 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(1))
+        self.chapter2 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(1))
         self.chapter2.setGeometry(QtCore.QRect(260, 20, 201, 151))
+        self.chapter2.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter2.setObjectName("chapter2")
-        self.chapter8 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(7))
+        self.chapter8 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(7))
         self.chapter8.setGeometry(QtCore.QRect(260, 370, 201, 151))
+        self.chapter8.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter8.setObjectName("chapter8")
         self.chapter1 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(0))
         self.chapter1.setGeometry(QtCore.QRect(30, 20, 201, 151))
+        self.chapter1.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter1.setObjectName("chapter1")
-        self.chapter9 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(8))
+        self.chapter9 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(8))
         self.chapter9.setGeometry(QtCore.QRect(490, 370, 201, 151))
+        self.chapter9.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter9.setObjectName("chapter9")
-        self.chapter5 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(4))
+        self.chapter5 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(4))
         self.chapter5.setGeometry(QtCore.QRect(260, 190, 201, 151))
+        self.chapter5.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter5.setObjectName("chapter5")
-        self.chapter6 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(5))
+        self.chapter6 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(5))
         self.chapter6.setGeometry(QtCore.QRect(490, 190, 201, 151))
+        self.chapter6.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter6.setObjectName("chapter6")
-        self.chapter7 = QtWidgets.QPushButton(self.page, clicked=lambda: self.openwindow(6))
+        self.chapter7 = QtWidgets.QPushButton(self.page,clicked=lambda: self.openwindow(6))
         self.chapter7.setGeometry(QtCore.QRect(30, 370, 201, 151))
+        self.chapter7.setStyleSheet("QPushButton{\n"
+"    font: 15pt \"Microsoft YaHei UI\";\n"
+"    color: white;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));\n"
+"    border-radius: 20px;\n"
+"}")
         self.chapter7.setObjectName("chapter7")
+        self.progressBar = QtWidgets.QProgressBar(self.page)
+        self.progressBar.setGeometry(QtCore.QRect(90, 130, 118, 23))
+        self.progressBar.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setObjectName("progressBar")
+        self.progressBar2 = QtWidgets.QProgressBar(self.page)
+        self.progressBar2.setGeometry(QtCore.QRect(320, 130, 118, 23))
+        self.progressBar2.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar2.setProperty("value", 24)
+        self.progressBar2.setObjectName("progressBar2")
+        self.progressBar3 = QtWidgets.QProgressBar(self.page)
+        self.progressBar3.setGeometry(QtCore.QRect(550, 130, 118, 23))
+        self.progressBar3.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar3.setProperty("value", 24)
+        self.progressBar3.setObjectName("progressBar3")
+        self.progressBar4 = QtWidgets.QProgressBar(self.page)
+        self.progressBar4.setGeometry(QtCore.QRect(90, 300, 118, 23))
+        self.progressBar4.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar4.setProperty("value", 24)
+        self.progressBar4.setObjectName("progressBar4")
+        self.progressBar5 = QtWidgets.QProgressBar(self.page)
+        self.progressBar5.setGeometry(QtCore.QRect(320, 300, 118, 23))
+        self.progressBar5.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar5.setProperty("value", 24)
+        self.progressBar5.setObjectName("progressBar5")
+        self.progressBar6 = QtWidgets.QProgressBar(self.page)
+        self.progressBar6.setGeometry(QtCore.QRect(550, 300, 118, 23))
+        self.progressBar6.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar6.setProperty("value", 24)
+        self.progressBar6.setObjectName("progressBar6")
+        self.progressBar9 = QtWidgets.QProgressBar(self.page)
+        self.progressBar9.setGeometry(QtCore.QRect(550, 480, 118, 23))
+        self.progressBar9.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar9.setProperty("value", 24)
+        self.progressBar9.setObjectName("progressBar9")
+        self.progressBar8 = QtWidgets.QProgressBar(self.page)
+        self.progressBar8.setGeometry(QtCore.QRect(320, 480, 118, 23))
+        self.progressBar8.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar8.setProperty("value", 24)
+        self.progressBar8.setObjectName("progressBar8")
+        self.progressBar7 = QtWidgets.QProgressBar(self.page)
+        self.progressBar7.setGeometry(QtCore.QRect(90, 480, 118, 23))
+        self.progressBar7.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 9pt \"Microsoft YaHei UI\";")
+        self.progressBar7.setProperty("value", 24)
+        self.progressBar7.setObjectName("progressBar7")
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
@@ -308,33 +534,13 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_5)
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
-        self.pushButton = QtWidgets.QPushButton(self.page_6)
-        self.pushButton.setGeometry(QtCore.QRect(30, 20, 201, 151))
-        self.pushButton.setObjectName("pushButton")
-        self.pushButton_2 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_2.setGeometry(QtCore.QRect(260, 20, 201, 151))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_3.setGeometry(QtCore.QRect(490, 20, 201, 151))
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_4.setGeometry(QtCore.QRect(490, 190, 201, 151))
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_5 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_5.setGeometry(QtCore.QRect(260, 190, 201, 151))
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_6 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_6.setGeometry(QtCore.QRect(490, 370, 201, 151))
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.pushButton_7 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_7.setGeometry(QtCore.QRect(30, 190, 201, 151))
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.pushButton_8 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_8.setGeometry(QtCore.QRect(30, 370, 201, 151))
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.pushButton_9 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_9.setGeometry(QtCore.QRect(260, 370, 201, 151))
-        self.pushButton_9.setObjectName("pushButton_9")
+        self.label_9 = QtWidgets.QLabel(self.page_6)
+        self.label_9.setGeometry(QtCore.QRect(10, 0, 689, 516))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_9.setFont(font)
+        self.label_9.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_9.setObjectName("label_9")
         self.stackedWidget.addWidget(self.page_6)
         self.page_7 = QtWidgets.QWidget()
         self.page_7.setObjectName("page_7")
@@ -394,14 +600,16 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "Orders Page"))
         self.label_7.setText(_translate("MainWindow", "Product Page"))
         self.label_8.setText(_translate("MainWindow", "Customers Page"))
-        self.pushButton.setText(_translate("MainWindow", "CHAPTER 1"))
-        self.pushButton_2.setText(_translate("MainWindow", "CHAPTER 2"))
-        self.pushButton_3.setText(_translate("MainWindow", "CHAPTER 3"))
-        self.pushButton_4.setText(_translate("MainWindow", "CHAPTER 6"))
-        self.pushButton_5.setText(_translate("MainWindow", "CHAPTER 5"))
-        self.pushButton_6.setText(_translate("MainWindow", "CHAPTER 9"))
-        self.pushButton_7.setText(_translate("MainWindow", "CHAPTER 4"))
-        self.pushButton_8.setText(_translate("MainWindow", "CHAPTER 7"))
-        self.pushButton_9.setText(_translate("MainWindow", "CHAPTER 8"))
+        self.label_9.setText(_translate("MainWindow", "검색결과가 존재하지 않습니다"))
         self.label_10.setText(_translate("MainWindow", "User Page"))
 import resource_rc
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

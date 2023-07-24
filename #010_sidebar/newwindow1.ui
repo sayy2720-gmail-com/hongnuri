@@ -22,7 +22,7 @@
 </string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>29</number>
       </property>
       <widget class="QWidget" name="p_0">
        <widget class="QPushButton" name="next_0">
@@ -683,7 +683,7 @@ color: rgb(0, 170, 127);</string>
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>330</y>
+          <y>340</y>
           <width>841</width>
           <height>111</height>
          </rect>
@@ -4424,7 +4424,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
         <widget class="QRadioButton" name="tquest_0">
@@ -4432,7 +4432,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
         <widget class="QRadioButton" name="tquest_1">
@@ -4440,7 +4440,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
         <widget class="QRadioButton" name="tquest_2">
@@ -4448,11 +4448,11 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
-       <widget class="QLabel" name="textlabel5_84">
+       <widget class="QLabel" name="testlabel_0">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -4482,37 +4482,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_17">
+        <widget class="QRadioButton" name="tquest_4">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_18">
+        <widget class="QRadioButton" name="tquest_5">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_19">
+        <widget class="QRadioButton" name="tquest_6">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_20">
+        <widget class="QRadioButton" name="tquest_7">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -4649,7 +4649,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_92">
+       <widget class="QLabel" name="testlabel_1">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -4679,37 +4679,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_21">
+        <widget class="QRadioButton" name="tquest_8">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_22">
+        <widget class="QRadioButton" name="tquest_9">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_23">
+        <widget class="QRadioButton" name="tquest_10">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_24">
+        <widget class="QRadioButton" name="tquest_11">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -4846,7 +4846,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_93">
+       <widget class="QLabel" name="testlabel_2">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -4876,37 +4876,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_25">
+        <widget class="QRadioButton" name="tquest_12">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_26">
+        <widget class="QRadioButton" name="tquest_13">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_27">
+        <widget class="QRadioButton" name="tquest_14">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_28">
+        <widget class="QRadioButton" name="tquest_15">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -5043,7 +5043,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_94">
+       <widget class="QLabel" name="testlabel_3">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -5073,37 +5073,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_29">
+        <widget class="QRadioButton" name="tquest_16">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_30">
+        <widget class="QRadioButton" name="tquest_17">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_31">
+        <widget class="QRadioButton" name="tquest_18">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_32">
+        <widget class="QRadioButton" name="tquest_19">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -5240,7 +5240,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_95">
+       <widget class="QLabel" name="testlabel_4">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -5270,37 +5270,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_37">
+        <widget class="QRadioButton" name="tquest_20">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_38">
+        <widget class="QRadioButton" name="tquest_21">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_39">
+        <widget class="QRadioButton" name="tquest_22">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_40">
+        <widget class="QRadioButton" name="tquest_23">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -5437,7 +5437,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_96">
+       <widget class="QLabel" name="testlabel_5">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -5467,37 +5467,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_41">
+        <widget class="QRadioButton" name="tquest_24">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_42">
+        <widget class="QRadioButton" name="tquest_25">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_43">
+        <widget class="QRadioButton" name="tquest_26">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_44">
+        <widget class="QRadioButton" name="tquest_27">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -5634,7 +5634,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_97">
+       <widget class="QLabel" name="testlabel_6">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -5664,37 +5664,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_45">
+        <widget class="QRadioButton" name="tquest_28">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_46">
+        <widget class="QRadioButton" name="tquest_29">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_47">
+        <widget class="QRadioButton" name="tquest_30">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_48">
+        <widget class="QRadioButton" name="tquest_31">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -5831,7 +5831,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_98">
+       <widget class="QLabel" name="testlabel_7">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -5861,37 +5861,37 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
-        <widget class="QRadioButton" name="quest5_53">
+        <widget class="QRadioButton" name="tquest_32">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);
 font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>상수는 모두 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_54">
+        <widget class="QRadioButton" name="tquest_33">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>문자열의 연결은 언더스코어 (_)을 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_55">
+        <widget class="QRadioButton" name="tquest_34">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(226, 226, 226);font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </property>
          <property name="text">
-          <string>변수와 함수의 이름은 대문자로 사용</string>
+          <string/>
          </property>
         </widget>
-        <widget class="QRadioButton" name="quest5_56">
+        <widget class="QRadioButton" name="tquest_35">
          <property name="styleSheet">
           <string notr="true">font: 15pt &quot;휴먼둥근헤드라인&quot;;background-color: rgb(226, 226, 226);</string>
          </property>
          <property name="text">
-          <string>의미를 알 수 있게 정함</string>
+          <string/>
          </property>
         </widget>
        </widget>
@@ -6028,7 +6028,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_99">
+       <widget class="QLabel" name="testlabel_8">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -6179,7 +6179,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="textlabel5_100">
+       <widget class="QLabel" name="testlabel_9">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -6208,7 +6208,7 @@ font: 15pt &quot;휴먼둥근헤드라인&quot;;</string>
          <string notr="true">background-color: rgb(227, 227, 227);</string>
         </property>
         <property name="text">
-         <string>코드입력</string>
+         <string/>
         </property>
        </widget>
       </widget>
