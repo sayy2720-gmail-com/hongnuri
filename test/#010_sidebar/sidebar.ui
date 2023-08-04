@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>954</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/*= Style for mainwindow START
+  ==================================================== */
+	#MainWindow {
+		background-color: #fff;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for button to change menu style START
+  ==================================================== */
+	#change_btn {
+		padding: 5px;
+		border: none;
+		width: 30px;
+		height: 30px;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for header widget START
+  ==================================================== */
+	#widget {
+		background-color: #f9fafd;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for menu with icon only START
+  ==================================================== */
+  	/* style for widget */
+	#icon_only_widget {
+		background-color: #313a46;
+		width:50px;
+	}
+
+    /* style for QPushButton and QLabel */
+	#icon_only_widget QPushButton, QLabel {
+		height:50px;
+		border:none;
+		/* border-bottom: 1px solid #b0b0b0; */
+	}
+
+	#icon_only_widget QPushButton:hover {
+		background-color: rgba( 86, 101, 115, 0.5);
+	}
+
+	/* style for logo image */
+	#logo_label_1 {
+		padding: 5px
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for menu with icon and text START
+  ==================================================== */
+	/* style for widget */
+	#full_menu_widget {
+		background-color: #313a46;
+	}
+
+	/* style for QPushButton */
+	#full_menu_widget QPushButton {
+		border:none;
+		border-radius: 3px;
+		text-align: left;
+		padding: 8px 0 8px 15px;
+		color: #788596;
+	}
+
+	#full_menu_widget QPushButton:hover {
+		background-color: rgba( 86, 101, 115, 0.5);
+	}
+
+	#full_menu_widget QPushButton:checked {
+		color: #fff;
+	}
+
+	/* style for logo image */
+	#logo_label_2 {
+		padding: 5px;
+		color: #fff;
+	}
+
+	/* style for APP title */
+	#logo_label_3 {
+		padding-right: 10px;
+		color: #fff;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for search button START
+  ==================================================== */
+	#search_btn {
+		border: none;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for search input START
+  ==================================================== */
+	#search_input {
+		border: none;
+		padding: 5px 10px;
+	}
+
+	#search_input:focus {
+		background-color: #70B9FE;
+	}
+/*= END
+  ==================================================== */
+
+/*= Style for user information button START
+  ==================================================== */
+	#user_btn {
+		border: none;
+	}
+/*= END
+  ==================================================== */</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_only_widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="logo_label_1">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resource.qrc">:/icon/icon/Logo.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="home_btn_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/home-4-32.ico</normaloff>
+             <normalon>:/icon/icon/home-4-48.ico</normalon>:/icon/icon/home-4-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="dashborad_btn_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/dashboard-5-32.ico</normaloff>
+             <normalon>:/icon/icon/dashboard-5-48.ico</normalon>:/icon/icon/dashboard-5-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="orders_btn_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/activity-feed-32.ico</normaloff>
+             <normalon>:/icon/icon/activity-feed-48.ico</normalon>:/icon/icon/activity-feed-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="products_btn_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/product-32.ico</normaloff>
+             <normalon>:/icon/icon/product-48.ico</normalon>:/icon/icon/product-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="customers_btn_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/group-32.ico</normaloff>
+             <normalon>:/icon/icon/group-48.ico</normalon>:/icon/icon/group-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>375</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exit_btn_1">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icon/icon/close-window-64.ico</normaloff>:/icon/icon/close-window-64.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="full_menu_widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="logo_label_2">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resource.qrc">:/icon/icon/Logo.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="logo_label_3">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sidebar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="home_btn_2">
+           <property name="text">
+            <string>Home</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/home-4-32.ico</normaloff>
+             <normalon>:/icon/icon/home-4-48.ico</normalon>:/icon/icon/home-4-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>14</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="dashborad_btn_2">
+           <property name="text">
+            <string>Dashboard</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/dashboard-5-32.ico</normaloff>
+             <normalon>:/icon/icon/dashboard-5-48.ico</normalon>:/icon/icon/dashboard-5-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>14</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="orders_btn_2">
+           <property name="text">
+            <string>Orders</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/activity-feed-32.ico</normaloff>
+             <normalon>:/icon/icon/activity-feed-48.ico</normalon>:/icon/icon/activity-feed-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>14</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="products_btn_2">
+           <property name="text">
+            <string>Products</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/product-32.ico</normaloff>
+             <normalon>:/icon/icon/product-48.ico</normalon>:/icon/icon/product-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>14</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="customers_btn_2">
+           <property name="text">
+            <string>Customers</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/icon/icon/group-32.ico</normaloff>
+             <normalon>:/icon/icon/group-48.ico</normalon>:/icon/icon/group-32.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>14</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>373</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exit_btn_2">
+         <property name="text">
+          <string>Exit</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icon/icon/close-window-64.ico</normaloff>:/icon/icon/close-window-64.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>14</width>
+           <height>14</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="change_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icon/icon/menu-4-32.ico</normaloff>:/icon/icon/menu-4-32.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>14</width>
+              <height>14</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>236</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="search_input">
+              <property name="placeholderText">
+               <string>Search...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_btn">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="resource.qrc">
+                <normaloff>:/icon/icon/search-13-48.ico</normaloff>:/icon/icon/search-13-48.ico</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>236</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="user_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icon/icon/user-48.ico</normaloff>:/icon/icon/user-48.ico</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <widget class="QPushButton" name="chapter3">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>20</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 3</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter4">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>20</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 4</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter2">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>20</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter8">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>160</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 8</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>300</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 9</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>160</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 5</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter6">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>160</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 6</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter7">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>160</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 7</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter13">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>440</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 13</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter10">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>300</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 10</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter14">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>440</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 14</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter11">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>300</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 11</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter12">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>300</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>CHAPTER 12</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter15">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>440</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>FINAL TEST1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="chapter16">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>440</y>
+             <width>161</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 15pt &quot;Microsoft YaHei UI&quot;;
+	color: white;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.857143, y2:0.857955, stop:0 rgba(10, 242, 251, 255), stop:1 rgba(224, 6, 159, 255));
+	border-radius: 20px;
+}</string>
+           </property>
+           <property name="text">
+            <string>FINAL TEST2</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Dashboard Page</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_3">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Orders Page</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Product Page</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Customers Page</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_6">
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>689</width>
+             <height>516</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>검색결과가 존재하지 않습니다</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_7">
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>User Page</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../PyQt5-Video-Book-main/#010_sidebar/resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>change_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_only_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>change_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>full_menu_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>home_btn_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>home_btn_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dashborad_btn_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dashborad_btn_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>orders_btn_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>orders_btn_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>products_btn_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>products_btn_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>customers_btn_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>customers_btn_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>home_btn_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>home_btn_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dashborad_btn_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dashborad_btn_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>orders_btn_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>orders_btn_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>products_btn_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>products_btn_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>55</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>customers_btn_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>customers_btn_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>599</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_btn_1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>588</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>599</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+  <slot>slot2()</slot>
+  <slot>slot3()</slot>
+ </slots>
+</ui>
